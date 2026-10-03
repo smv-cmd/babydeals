@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baby Deals Tracker</title>
+<style>
+  :root { --bg:#fbf8f5; --card:#fff; --ink:#2b2b33; --mute:#76767f; --line:#ebe5de; --accent:#e4572e; --good:#1b8a5a; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#17171b; --card:#202026; --ink:#f1f1f4; --mute:#9a9aa5; --line:#32323a; --accent:#ff7a52; --good:#4cc790; }
+  }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.4 system-ui,sans-serif }
+  .wrap { max-width:1000px; margin:0 auto; padding:24px 16px 48px }
+  h1 { margin:0 0 4px; font-size:1.6rem }
+  .sub { color:var(--mute); margin:0 0 20px; font-size:.9rem }
+  .controls { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:20px }
+  .controls label { display:flex; flex-direction:column; font-size:.75rem; color:var(--mute); gap:3px }
+  select, input[type=search] { padding:8px 10px; border:1px solid var(--line); border-radius:8px; background:var(--card); color:var(--ink); font:inherit; min-width:140px }
+  .count { margin:0 0 12px; color:var(--mute); font-size:.9rem }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:14px }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px; display:flex; flex-direction:column; gap:6px; text-decoration:none; color:inherit; position:relative }
+  .card:hover { border-color:var(--accent) }
+  .emoji { font-size:2.4rem }
+  .badge { position:absolute; top:12px; right:12px; background:var(--accent); color:#fff; font-weight:700; font-size:.8rem; padding:3px 8px; border-radius:99px }
+  .name { font-weight:600 }
+  .meta { color:var(--mute); font-size:.8rem }
+  .price { font-size:1.3rem; font-weight:700; color:var(--good) }
+  .was { color:var(--mute); text-decoration:line-through; font-size:.9rem; margin-left:6px; font-weight:400 }
+  .empty { padding:40px; text-align:center; color:var(--mute) }
+  footer { margin-top:28px; color:var(--mute); font-size:.78rem }
+</style>
+<script src="deals.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <h1>👶 Baby Deals Tracker</h1>
+  <p class="sub">Baby clothing discounts, tracked only if the sale price is under <strong>$<span id="capLabel"></span></strong>.</p>
+
+  <div class="controls">
+    <label>Search<input type="search" id="q" placeholder="onesie, sleeper…"></label>
+    <label>Retailer<select id="store"></select></label>
+    <label>Size<select id="size"></select></label>
+    <label>Category<select id="cat"></select></label>
+    <label>Sort<select id="sort">
+      <option value="pct">Biggest % off</option>
+      <option value="save">Most $ saved</option>
+      <option value="low">Price: low to high</option>
+    </select></label>
+  </div>
+
+  <p class="count" id="count"></p>
+  <div class="grid" id="grid"></div>
+
+  <footer id="foot"></footer>
+</div>
+
+<script>
+// ---- Config -------------------------------------------------------------
+const PRICE_CAP = 30;          // only deals with sale price under this are tracked
+const MIN_DISCOUNT = 10;       // ignore discounts smaller than this (%)
+
+// ---- Data source --------------------------------------------------------
+// deals.js is rewritten daily by the scan agent.
+const DATA = window.DEALS_DATA || {updated:"never", deals:[]};
+async function loadDeals() { return DATA.deals; }
+
+// ---- App ----------------------------------------------------------------
+const $ = id => document.getElementById(id);
+const pct = d => Math.round((1 - d.now / d.was) * 100);
+let all = [];
+
+function fill(sel, label, values) {
+  sel.innerHTML = `<option value="">${label}</option>` + values.map(v => `<option>${v}</option>`).join("");
+}
+
+function render() {
+  const q = $("q").value.trim().toLowerCase();
+  const f = { store: $("store").value, size: $("size").value, cat: $("cat").value };
+  const sorters = { pct: (a,b)=>pct(b)-pct(a), save: (a,b)=>(b.was-b.now)-(a.was-a.now), low: (a,b)=>a.now-b.now };
+  const list = all
+    .filter(d => (!q || d.name.toLowerCase().includes(q)) &&
+      (!f.store || d.store === f.store) && (!f.cat || d.cat === f.cat) &&
+      (!f.size || d.size.includes(f.size)))
+    .sort(sorters[$("sort").value]);
+
+  $("count").textContent = `${list.length} deal${list.length === 1 ? "" : "s"} under $${PRICE_CAP}`;
+  $("grid").innerHTML = list.length ? list.map(d => `
+    <a class="card" href="${d.url}" target="_blank" rel="noopener">
+      <span class="badge">−${pct(d)}%</span>
+      <span class="emoji">${d.emoji || "👶"}</span>
+      <span class="name">${d.name}</span>
+      <span class="meta">${d.store} · ${d.cat} · ${d.size}</span>
+      <span><span class="price">$${d.now.toFixed(2)}</span><span class="was">$${d.was.toFixed(2)}</span></span>
+    </a>`).join("") : `<div class="empty">No deals match those filters.</div>`;
+}
+
+(async function init() {
+  $("capLabel").textContent = PRICE_CAP;
+  const raw = await loadDeals();
+  // Enforce tracking rules: sale price under cap, real discount.
+  all = raw.filter(d => d.now < PRICE_CAP && d.now < d.was && pct(d) >= MIN_DISCOUNT);
+  const uniq = k => [...new Set(all.map(d => d[k]))].sort();
+  fill($("store"), "All retailers", uniq("store"));
+  fill($("cat"), "All categories", uniq("cat"));
+  fill($("size"), "All sizes", ["NB", "0", "3", "6", "9", "12", "18", "24"].filter(s => all.some(d => d.size.includes(s))));
+  ["q","store","size","cat","sort"].forEach(id => $(id).addEventListener("input", render));
+  $("foot").textContent = `Prices last scanned ${DATA.updated} (updated daily by the scan agent). Verify price at the retailer before buying. Tracking ${all.length} of ${raw.length} items (rest are $${PRICE_CAP}+ or under ${MIN_DISCOUNT}% off).`;
+  render();
+})();
+</script>
+</body>
+</html>

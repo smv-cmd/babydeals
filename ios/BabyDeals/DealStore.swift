@@ -10,6 +10,7 @@ struct Deal: Identifiable, Hashable {
     let now: Double
     let emoji: String
     let url: URL?
+    let imageURL: URL?
 
     var percentOff: Int { was > 0 ? Int(((1 - now / was) * 100).rounded()) : 0 }
     var saved: Double { was - now }
@@ -62,7 +63,8 @@ final class DealStore: ObservableObject {
                   now < was else { return nil }
             return Deal(name: name, store: d["store"] as? String ?? "", cat: d["cat"] as? String ?? "",
                         size: d["size"] as? String ?? "Baby", was: was, now: now,
-                        emoji: d["emoji"] as? String ?? "👶", url: (d["url"] as? String).flatMap(URL.init))
+                        emoji: d["emoji"] as? String ?? "👶", url: (d["url"] as? String).flatMap(URL.init),
+                        imageURL: (d["image"] as? String).flatMap(URL.init))
         }
         return true
     }

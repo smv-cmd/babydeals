@@ -69,11 +69,33 @@ struct ContentView: View {
     }
 }
 
+struct ProductImage: View {
+    let deal: Deal
+    var body: some View {
+        Group {
+            if let url = deal.imageURL {
+                AsyncImage(url: url) { phase in
+                    switch phase {
+                    case .success(let img): img.resizable().scaledToFill()
+                    case .empty: ProgressView()
+                    default: Text(deal.emoji).font(.system(size: 34))
+                    }
+                }
+            } else {
+                Text(deal.emoji).font(.system(size: 34))
+            }
+        }
+        .frame(width: 72, height: 72)
+        .background(Color.secondary.opacity(0.1))
+        .clipShape(RoundedRectangle(cornerRadius: 10))
+    }
+}
+
 struct DealRow: View {
     let deal: Deal
     var body: some View {
         HStack(spacing: 12) {
-            Text(deal.emoji).font(.system(size: 34))
+            ProductImage(deal: deal)
             VStack(alignment: .leading, spacing: 3) {
                 Text(deal.name).font(.headline).foregroundStyle(.primary).lineLimit(2)
                 Text("\(deal.store) · \(deal.cat) · \(deal.size)").font(.caption).foregroundStyle(.secondary)

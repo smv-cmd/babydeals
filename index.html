@@ -35,13 +35,20 @@
 <body>
 <div class="wrap">
   <h1>👶 Baby Deals Tracker</h1>
-  <p class="sub">Baby clothing discounts, tracked only if the sale price is under <strong>$<span id="capLabel"></span></strong>.</p>
+  <p class="sub">Current baby clothing discounts from online retailers.</p>
 
   <div class="controls">
     <label>Search<input type="search" id="q" placeholder="onesie, sleeper…"></label>
     <label>Retailer<select id="store"></select></label>
     <label>Size<select id="size"></select></label>
     <label>Category<select id="cat"></select></label>
+    <label>Max price<select id="max">
+      <option value="">Any price</option>
+      <option value="15">Under $15</option>
+      <option value="30">Under $30</option>
+      <option value="50">Under $50</option>
+      <option value="100">Under $100</option>
+    </select></label>
     <label>Sort<select id="sort">
       <option value="pct">Biggest % off</option>
       <option value="save">Most $ saved</option>
@@ -57,7 +64,6 @@
 
 <script>
 // ---- Config -------------------------------------------------------------
-const PRICE_CAP = 30;          // only deals with sale price under this are tracked
 const MIN_DISCOUNT = 10;       // ignore discounts smaller than this (%)
 
 // ---- Data source --------------------------------------------------------
@@ -76,15 +82,16 @@ function fill(sel, label, values) {
 
 function render() {
   const q = $("q").value.trim().toLowerCase();
+  const max = Number($("max").value) || 0;
   const f = { store: $("store").value, size: $("size").value, cat: $("cat").value };
   const sorters = { pct: (a,b)=>pct(b)-pct(a), save: (a,b)=>(b.was-b.now)-(a.was-a.now), low: (a,b)=>a.now-b.now };
   const list = all
-    .filter(d => (!q || d.name.toLowerCase().includes(q)) &&
+    .filter(d => (!q || d.name.toLowerCase().includes(q)) && (!max || d.now < max) &&
       (!f.store || d.store === f.store) && (!f.cat || d.cat === f.cat) &&
       (!f.size || d.size.includes(f.size)))
     .sort(sorters[$("sort").value]);
 
-  $("count").textContent = `${list.length} deal${list.length === 1 ? "" : "s"} under $${PRICE_CAP}`;
+  $("count").textContent = `${list.length} deal${list.length === 1 ? "" : "s"}${max ? ` under $${max}` : ""}`;
   $("grid").innerHTML = list.length ? list.map(d => `
     <a class="card" href="${d.url}" target="_blank" rel="noopener">
       <span class="badge">−${pct(d)}%</span>
@@ -96,16 +103,15 @@ function render() {
 }
 
 (async function init() {
-  $("capLabel").textContent = PRICE_CAP;
   const raw = await loadDeals();
   // Enforce tracking rules: sale price under cap, real discount.
-  all = raw.filter(d => d.now < PRICE_CAP && d.now < d.was && pct(d) >= MIN_DISCOUNT);
+  all = raw.filter(d => d.now < d.was && pct(d) >= MIN_DISCOUNT);
   const uniq = k => [...new Set(all.map(d => d[k]))].sort();
   fill($("store"), "All retailers", uniq("store"));
   fill($("cat"), "All categories", uniq("cat"));
   fill($("size"), "All sizes", ["NB", "0", "3", "6", "9", "12", "18", "24"].filter(s => all.some(d => d.size.includes(s))));
-  ["q","store","size","cat","sort"].forEach(id => $(id).addEventListener("input", render));
-  $("foot").textContent = `Prices last scanned ${DATA.updated} (updated daily by the scan agent). Verify price at the retailer before buying. Tracking ${all.length} of ${raw.length} items (rest are $${PRICE_CAP}+ or under ${MIN_DISCOUNT}% off).`;
+  ["q","store","size","cat","sort","max"].forEach(id => $(id).addEventListener("input", render));
+  $("foot").textContent = `Prices last scanned ${DATA.updated} (updated daily by the scan agent). Verify price at the retailer before buying. Tracking ${all.length} of ${raw.length} items (rest are under ${MIN_DISCOUNT}% off).`;
   render();
 })();
 </script>

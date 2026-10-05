@@ -170,6 +170,36 @@ window.DEALS_DATA = {
    "now": 17,
    "emoji": "🐞",
    "url": "https://www.macys.com/shop/sale/by-category/kids-baby/baby?id=64780"
+  },
+  {
+   "name": "Carter's Baby Sleep & Play Pajamas",
+   "store": "Carter's",
+   "cat": "Sleepwear",
+   "size": "Baby",
+   "was": 18,
+   "now": 9,
+   "emoji": "🌙",
+   "url": "https://www.carters.com/c/baby-clothes-deals"
+  },
+  {
+   "name": "Old Navy Printed Sweatshirt and Sweatpants Set for Baby",
+   "store": "Old Navy",
+   "cat": "Sets",
+   "size": "Baby",
+   "was": 26.87,
+   "now": 18,
+   "emoji": "🧸",
+   "url": "https://oldnavy.gap.com/browse/baby/sale?cid=3043099"
+  },
+  {
+   "name": "Garanimals Baby 5-Piece Pajama Set",
+   "store": "Walmart",
+   "cat": "Sleepwear",
+   "size": "Baby",
+   "was": 38.99,
+   "now": 22.96,
+   "emoji": "😴",
+   "url": "https://www.walmart.com/shop/deals/clothing-and-accessories/fashion-under-10/baby"
   }
  ]
 };

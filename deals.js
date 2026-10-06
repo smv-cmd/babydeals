@@ -1,35 +1,45 @@
 window.DEALS_DATA = {
- "updated": "2026-10-04",
+ "updated": "2026-10-05",
  "deals": [
   {
-   "name": "Carter's Just One You Baby Boys' 4pc T-Shirt and Shorts Set",
-   "store": "Target",
-   "cat": "Sets",
+   "name": "Carter's Baby Sleep & Play Pajamas",
+   "store": "Carter's",
+   "cat": "Sleepwear",
    "size": "Baby",
-   "was": 16,
-   "now": 11.2,
-   "emoji": "👕",
-   "url": "https://www.target.com/c/baby-clothing-clearance/-/N-5tg40"
+   "was": 18,
+   "now": 9,
+   "emoji": "😴",
+   "url": "https://www.carters.com/c/baby-clothes-deals"
   },
   {
-   "name": "Cloud Island Baby Boys' 2pc Johnny Collar Polo Shirt and Shorts Set",
-   "store": "Target",
-   "cat": "Sets",
+   "name": "Old Navy Baby Jersey-Knit Pants",
+   "store": "Old Navy",
+   "cat": "Bottoms",
    "size": "Baby",
-   "was": 12,
+   "was": 12.99,
    "now": 6,
-   "emoji": "👔",
-   "url": "https://www.target.com/c/baby-clothing-clearance/-/N-5tg40"
+   "emoji": "👖",
+   "url": "https://oldnavy.gap.com/browse/baby/sale?cid=3043099"
   },
   {
-   "name": "Carter's Just One You Baby Girls' 2pc Rose Tank Top and Shorts Set",
-   "store": "Target",
-   "cat": "Sets",
+   "name": "Old Navy Baby Long-Sleeve Bodysuit 5-Pack",
+   "store": "Old Navy",
+   "cat": "Bodysuits",
    "size": "Baby",
-   "was": 12,
-   "now": 6,
-   "emoji": "🌹",
-   "url": "https://www.target.com/c/baby-clothing-clearance/-/N-5tg40"
+   "was": 54.99,
+   "now": 25,
+   "emoji": "👶",
+   "url": "https://oldnavy.gap.com/browse/baby/sale?cid=3043099"
+  },
+  {
+   "name": "Old Navy Unisex Baby Bodysuit 5-Pack",
+   "store": "Old Navy",
+   "cat": "Bodysuits",
+   "size": "Baby",
+   "was": 64.99,
+   "now": 15.97,
+   "emoji": "🍼",
+   "url": "https://oldnavy.gap.com/browse/baby/sale?cid=3043099"
   },
   {
    "name": "Baby Boy Carter's Dinosaur Short-Sleeve Romper",
@@ -40,166 +50,6 @@ window.DEALS_DATA = {
    "now": 9,
    "emoji": "🦖",
    "url": "https://www.kohls.com/catalog/sale-baby-clothing.jsp?CN=Promotions%3ASale+AgeAppropriate%3AKids+ChildAgeRange%3ABaby+Department%3AClothing"
-  },
-  {
-   "name": "Baby Girl Carter's 2pc Floral Top & Short Set",
-   "store": "Kohl's",
-   "cat": "Sets",
-   "size": "Baby",
-   "was": 29,
-   "now": 17.4,
-   "emoji": "🌼",
-   "url": "https://www.kohls.com/catalog/sale-baby-clothing.jsp?CN=Promotions%3ASale+AgeAppropriate%3AKids+ChildAgeRange%3ABaby+Department%3AClothing"
-  },
-  {
-   "name": "Carter's Baby Bodysuits Multi-Pack (50% off)",
-   "store": "Macy's",
-   "cat": "Bodysuits",
-   "size": "Baby",
-   "was": 26,
-   "now": 13,
-   "emoji": "👶",
-   "url": "https://www.macys.com/shop/sale/by-category/kids-baby/baby?id=64780"
-  },
-  {
-   "name": "Jersey-Knit Pants for Baby",
-   "store": "Old Navy",
-   "cat": "Bottoms",
-   "size": "Baby",
-   "was": 12.99,
-   "now": 6,
-   "emoji": "👖",
-   "url": "https://oldnavy.gap.com/browse/baby/sale?cid=3043099"
-  },
-  {
-   "name": "Long-Sleeve Bodysuit 5-Pack for Baby",
-   "store": "Old Navy",
-   "cat": "Bodysuits",
-   "size": "Baby",
-   "was": 54.99,
-   "now": 25,
-   "emoji": "👶",
-   "url": "https://oldnavy.gap.com/browse/baby/sale?cid=3043099"
-  },
-  {
-   "name": "Baby Nike Waffle Knit Long Sleeve Footed Coverall",
-   "store": "Kohl's",
-   "cat": "Rompers",
-   "size": "Baby",
-   "was": 24,
-   "now": 12.99,
-   "emoji": "👟",
-   "url": "https://www.kohls.com/catalog/sale-baby-clothing.jsp?CN=Promotions%3ASale+AgeAppropriate%3AKids+ChildAgeRange%3ABaby+Department%3AClothing"
-  },
-  {
-   "name": "Polo Ralph Lauren Baby Boys' Short-Sleeve T-Shirt (30% off)",
-   "store": "Macy's",
-   "cat": "Tops",
-   "size": "Baby",
-   "was": 19.5,
-   "now": 13.65,
-   "emoji": "👕",
-   "url": "https://www.macys.com/shop/sale/by-category/kids-baby/baby?id=64780"
-  },
-  {
-   "name": "Disney Baby Girls Winnie-the-Pooh Skirted Bodysuits & Headband 3-Piece Set (48% off)",
-   "store": "Macy's",
-   "cat": "Sets",
-   "size": "Baby",
-   "was": 30.29,
-   "now": 15.75,
-   "emoji": "🐻",
-   "url": "https://www.macys.com/shop/sale/by-category/kids-baby/baby?id=64780"
-  },
-  {
-   "name": "Baby Bodysuit & Jogger Set (43% off)",
-   "store": "Nordstrom Rack",
-   "cat": "Sets",
-   "size": "Baby",
-   "was": 29.77,
-   "now": 16.97,
-   "emoji": "🧸",
-   "url": "https://www.nordstromrack.com/shop/kids/baby"
-  },
-  {
-   "name": "Baby Fleece Convertible Coverall (65% off)",
-   "store": "Nordstrom Rack",
-   "cat": "Rompers",
-   "size": "Baby",
-   "was": 57.06,
-   "now": 19.97,
-   "emoji": "🧥",
-   "url": "https://www.nordstromrack.com/shop/kids/baby"
-  },
-  {
-   "name": "Cloud Island Baby Girls' 3pk Floral Pointelle Sleep N' Play",
-   "store": "Target",
-   "cat": "Sleepwear",
-   "size": "Baby",
-   "was": 15,
-   "now": 10.5,
-   "emoji": "🌸",
-   "url": "https://www.target.com/c/baby-clothing-clearance/-/N-5tg40"
-  },
-  {
-   "name": "Cloud Island Baby Boys' 3pk Outerspace Sleep N' Play",
-   "store": "Target",
-   "cat": "Sleepwear",
-   "size": "Baby",
-   "was": 15,
-   "now": 8.25,
-   "emoji": "🚀",
-   "url": "https://www.target.com/c/baby-clothing-clearance/-/N-5tg40"
-  },
-  {
-   "name": "Cloud Island Baby Girls' 2pc Peplum Tank Top and Ruffle Shorts Set",
-   "store": "Target",
-   "cat": "Sets",
-   "size": "Baby",
-   "was": 12,
-   "now": 6,
-   "emoji": "🎀",
-   "url": "https://www.target.com/c/baby-clothing-clearance/-/N-5tg40"
-  },
-  {
-   "name": "Carter's Baby Critter Short-Sleeve Bodysuits 5-Pack (50% off)",
-   "store": "Macy's",
-   "cat": "Bodysuits",
-   "size": "Baby",
-   "was": 34,
-   "now": 17,
-   "emoji": "🐞",
-   "url": "https://www.macys.com/shop/sale/by-category/kids-baby/baby?id=64780"
-  },
-  {
-   "name": "Carter's Baby Sleep & Play Pajamas",
-   "store": "Carter's",
-   "cat": "Sleepwear",
-   "size": "Baby",
-   "was": 18,
-   "now": 9,
-   "emoji": "🌙",
-   "url": "https://www.carters.com/c/baby-clothes-deals"
-  },
-  {
-   "name": "Old Navy Printed Sweatshirt and Sweatpants Set for Baby",
-   "store": "Old Navy",
-   "cat": "Sets",
-   "size": "Baby",
-   "was": 26.87,
-   "now": 18,
-   "emoji": "🧸",
-   "url": "https://oldnavy.gap.com/browse/baby/sale?cid=3043099"
-  },
-  {
-   "name": "Garanimals Baby 5-Piece Pajama Set",
-   "store": "Walmart",
-   "cat": "Sleepwear",
-   "size": "Baby",
-   "was": 38.99,
-   "now": 22.96,
-   "emoji": "😴",
-   "url": "https://www.walmart.com/shop/deals/clothing-and-accessories/fashion-under-10/baby"
   }
  ]
 };

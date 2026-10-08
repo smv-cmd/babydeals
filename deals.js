@@ -68,114 +68,128 @@ window.DEALS_DATA = {
    "image": "https://www.gerberchildrenswear.com/cdn/shop/products/aupm1zbrs2wpshvmfj1d.jpg"
   },
   {
-   "name": "Baby Girls Leopard 2-Piece Outfit Set",
-   "store": "Gymboree",
-   "cat": "Sets",
-   "size": "Baby",
-   "was": 59.95,
-   "now": 29.97,
-   "emoji": "🐆",
-   "url": "https://www.gymboree.com/us/p/Baby-Girls-Long-Sleeve-Leopard-2-Piece-Outfit-Set---The-Leopard-Edit-3062150-01"
-  },
-  {
-   "name": "Baby Peter Rabbit Swaddle Blanket",
-   "store": "Gymboree",
-   "cat": "Accessories",
-   "size": "Baby",
-   "was": 22.95,
-   "now": 9.18,
-   "emoji": "🐰",
-   "url": "https://www.gymboree.com/us/p/Baby-Peter-Rabbit-Swaddle-Blanket-3058068-BQ"
-  },
-  {
-   "name": "Baby Girls Peter Rabbit Embroidered Seersucker 2-Piece Outfit",
-   "store": "Gymboree",
-   "cat": "Sets",
-   "size": "Baby",
-   "was": 49.95,
-   "now": 19.98,
-   "emoji": "🐇",
-   "url": "https://www.gymboree.com/us/p/Baby-Girls-Short-Sleeve-Peter-Rabbit-Embroidered-Seersucker-2-Piece-Outfit-Set-3058062-BQ"
-  },
-  {
-   "name": "Baby Santa Thermal Footed One Piece Pajamas",
-   "store": "Gymboree",
+   "name": "Infant Boys Space Fleece Pajamas",
+   "store": "Gerber Childrenswear",
    "cat": "Sleepwear",
    "size": "Baby",
-   "was": 37.95,
-   "now": 11.38,
-   "emoji": "🎅",
-   "url": "https://www.gymboree.com/us/p/Baby-Long-Sleeve-Santa-Thermal-Footed-One-Piece-Pajamas-3056467-1671"
+   "was": 20,
+   "now": 7.97,
+   "emoji": "🚀",
+   "url": "https://www.gerberchildrenswear.com/products/1-pack-infant-and-toddler-boys-space-fleece-pajamas-op2217"
   },
   {
-   "name": "Baby Girls Hello Kitty Floral Toile Bodysuit 3-Pack",
-   "store": "Gymboree",
-   "cat": "Bodysuits",
-   "size": "Baby",
-   "was": 42.95,
-   "now": 17.18,
-   "emoji": "🎀",
-   "url": "https://www.gymboree.com/us/p/Baby-Girls-Short-Sleeve-Hello-Kitty-Floral-Toile-Bodysuit-3-Pack-3058467-BQ"
-  },
-  {
-   "name": "Baby Girls Crochet Floral Tutu Dress",
-   "store": "Gymboree",
-   "cat": "Dresses",
-   "size": "Baby",
-   "was": 49.95,
-   "now": 19.98,
-   "emoji": "👗",
-   "url": "https://www.gymboree.com/us/p/Baby-Girls-Short-Sleeve-Crochet-Floral-Tutu-Dress---Enchanted-Garden-3058373-33KJ"
-  },
-  {
-   "name": "Newborn Baby Girls Cotton Long Sleeve Romper Outfit Set",
-   "store": "Walmart",
-   "cat": "Sets",
-   "size": "3-6 months",
-   "was": 23.99,
-   "now": 12.89,
-   "emoji": "👶",
-   "url": "https://www.walmart.com/c/kp/baby-girl-clothes-sale"
-  },
-  {
-   "name": "Viscose from Bamboo Footless Zip Sleepwear Baby Pajamas 2-Pack",
-   "store": "Walmart",
+   "name": "Infant Girls Fox Fleece Pajamas",
+   "store": "Gerber Childrenswear",
    "cat": "Sleepwear",
-   "size": "0-3 months",
-   "was": 33.99,
-   "now": 19.89,
-   "emoji": "😴",
-   "url": "https://www.walmart.com/c/kp/baby-girl-clothes-sale"
+   "size": "Baby",
+   "was": 20,
+   "now": 7.97,
+   "emoji": "🦊",
+   "url": "https://www.gerberchildrenswear.com/products/1-pack-infant-and-toddler-girls-fox-fleece-pajamas-op2217"
   },
   {
-   "name": "Baby Girl Pants 2-Pack",
-   "store": "Walmart",
+   "name": "Infant Girls Floral Footed Fleece Pajamas",
+   "store": "Gerber Childrenswear",
+   "cat": "Sleepwear",
+   "size": "Baby",
+   "was": 20,
+   "now": 7.97,
+   "emoji": "🌸",
+   "url": "https://www.gerberchildrenswear.com/products/1-pack-infant-and-toddler-girls-floral-fleece-pajamas-op2217"
+  },
+  {
+   "name": "Baby Neutral Brown Leggings",
+   "store": "Gerber Childrenswear",
    "cat": "Bottoms",
-   "size": "Preemie-12 months",
-   "was": 9,
+   "size": "Baby",
+   "was": 12,
    "now": 4,
    "emoji": "👖",
-   "url": "https://www.walmart.com/c/kp/baby-clothes-clearance-1.00"
+   "url": "https://www.gerberchildrenswear.com/products/1-pack-baby-boys-brown-legging-wm2506"
   },
   {
-   "name": "Baby Girl Bodysuit 3-Pack",
-   "store": "Walmart",
-   "cat": "Bodysuits",
+   "name": "Baby Boys Dark Blue Cuffed Shorts",
+   "store": "Gerber Childrenswear",
+   "cat": "Bottoms",
    "size": "Baby",
-   "was": 9.48,
-   "now": 5,
-   "emoji": "🍼",
-   "url": "https://www.walmart.com/c/kp/baby-clothes-clearance-1.00"
+   "was": 12,
+   "now": 4,
+   "emoji": "🩳",
+   "url": "https://www.gerberchildrenswear.com/products/1-pack-baby-boys-dark-blue-cuffed-shorts-wm2506"
   },
   {
-   "name": "Gerber Baby Neutral Viscose Americana Coverall",
-   "store": "Walmart",
-   "cat": "Rompers",
+   "name": "Baby Girls Light Pink Floral Cuffed Shorts",
+   "store": "Gerber Childrenswear",
+   "cat": "Bottoms",
    "size": "Baby",
-   "was": 11,
-   "now": 5.5,
-   "emoji": "🇺🇸",
-   "url": "https://www.walmart.com/c/kp/infant-sale-kids-clothing"
+   "was": 12,
+   "now": 4,
+   "emoji": "🩳",
+   "url": "https://www.gerberchildrenswear.com/products/1-pack-baby-girls-light-pink-floral-cuffed-shorts-wm2506"
+  },
+  {
+   "name": "Baby Girls Rose Bouquet Harem Shorts",
+   "store": "Gerber Childrenswear",
+   "cat": "Bottoms",
+   "size": "Baby",
+   "was": 12,
+   "now": 4,
+   "emoji": "🌹",
+   "url": "https://www.gerberchildrenswear.com/products/1-pack-baby-girls-light-rose-bouquet-harem-shorts-wm2506",
+   "image": "https://www.gerberchildrenswear.com/cdn/shop/files/Modern-Moments-by-Gerber_1-pack-baby-girls-light-rose-bouquet-harem-shorts-wm2506_image_1.jpg"
+  },
+  {
+   "name": "Infant & Toddler Boys Brown Harem Kangaroo Pocket Shorts",
+   "store": "Gerber Childrenswear",
+   "cat": "Bottoms",
+   "size": "Baby",
+   "was": 12,
+   "now": 4,
+   "emoji": "🩳",
+   "url": "https://www.gerberchildrenswear.com/products/1-pack-infant-and-toddler-boys-brown-harem-shorts-wm2508",
+   "image": "https://www.gerberchildrenswear.com/cdn/shop/files/Modern-Moments-by-Gerber_1-pack-infant-and-toddler-boys-brown-harem-shorts-wm2508_image_1.jpg"
+  },
+  {
+   "name": "Infant & Toddler Girls Beige Flowers Smocked Sleeveless Top",
+   "store": "Gerber Childrenswear",
+   "cat": "Tops",
+   "size": "Baby",
+   "was": 12,
+   "now": 4,
+   "emoji": "🌼",
+   "url": "https://www.gerberchildrenswear.com/products/1-pack-infant-and-toddler-girls-light-beige-flowers-smocked-sleeveless-top-wm2507",
+   "image": "https://www.gerberchildrenswear.com/cdn/shop/files/modern-moments-by-Gerber_1-pack-infant-and-toddler-girls-light-beige-flowers-smocked-sleeveless-top-wm2507_image_1.jpg"
+  },
+  {
+   "name": "Infant & Toddler Boys Desert Box Waffle T-Shirt",
+   "store": "Gerber Childrenswear",
+   "cat": "Tops",
+   "size": "Baby",
+   "was": 12,
+   "now": 4,
+   "emoji": "👕",
+   "url": "https://www.gerberchildrenswear.com/products/1-pack-infant-and-toddler-boys-light-tan-box-shirt-wm2508",
+   "image": "https://www.gerberchildrenswear.com/cdn/shop/files/WM248019B01_MAIN.jpg"
+  },
+  {
+   "name": "2-Piece Baby & Toddler Girls UPF 50+ Rash Guard & Swim Set",
+   "store": "Gerber Childrenswear",
+   "cat": "Sets",
+   "size": "Baby",
+   "was": 36,
+   "now": 9.97,
+   "emoji": "👙",
+   "url": "https://www.gerberchildrenswear.com/products/2-piece-baby-and-toddler-girls-lemon-squeeze-rashguard-swim-bottoms-set-22s-p"
+  },
+  {
+   "name": "2-Piece Baby & Toddler Boys UPF 50+ Rash Guard & Swim Trunks Set",
+   "store": "Gerber Childrenswear",
+   "cat": "Sets",
+   "size": "Baby",
+   "was": 34,
+   "now": 9.97,
+   "emoji": "🏊",
+   "url": "https://www.gerberchildrenswear.com/products/2-piece-baby-and-toddler-boys-vacation-vibes-rashguard-swim-trunks-set-22s-p"
   }
  ]
 };

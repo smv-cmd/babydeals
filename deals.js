@@ -1,5 +1,5 @@
 window.DEALS_DATA = {
- "updated": "2026-10-07",
+ "updated": "2026-10-08",
  "deals": [
   {
    "name": "Baby Neutral Brown Sherpa Booties",
@@ -68,66 +68,6 @@ window.DEALS_DATA = {
    "image": "https://www.gerberchildrenswear.com/cdn/shop/products/aupm1zbrs2wpshvmfj1d.jpg"
   },
   {
-   "name": "Infant Boys Space Fleece Pajamas",
-   "store": "Gerber Childrenswear",
-   "cat": "Sleepwear",
-   "size": "Baby",
-   "was": 20,
-   "now": 7.97,
-   "emoji": "🚀",
-   "url": "https://www.gerberchildrenswear.com/products/1-pack-infant-and-toddler-boys-space-fleece-pajamas-op2217"
-  },
-  {
-   "name": "Infant Girls Fox Fleece Pajamas",
-   "store": "Gerber Childrenswear",
-   "cat": "Sleepwear",
-   "size": "Baby",
-   "was": 20,
-   "now": 7.97,
-   "emoji": "🦊",
-   "url": "https://www.gerberchildrenswear.com/products/1-pack-infant-and-toddler-girls-fox-fleece-pajamas-op2217"
-  },
-  {
-   "name": "Infant Girls Floral Footed Fleece Pajamas",
-   "store": "Gerber Childrenswear",
-   "cat": "Sleepwear",
-   "size": "Baby",
-   "was": 20,
-   "now": 7.97,
-   "emoji": "🌸",
-   "url": "https://www.gerberchildrenswear.com/products/1-pack-infant-and-toddler-girls-floral-fleece-pajamas-op2217"
-  },
-  {
-   "name": "Baby Neutral Brown Leggings",
-   "store": "Gerber Childrenswear",
-   "cat": "Bottoms",
-   "size": "Baby",
-   "was": 12,
-   "now": 4,
-   "emoji": "👖",
-   "url": "https://www.gerberchildrenswear.com/products/1-pack-baby-boys-brown-legging-wm2506"
-  },
-  {
-   "name": "Baby Boys Dark Blue Cuffed Shorts",
-   "store": "Gerber Childrenswear",
-   "cat": "Bottoms",
-   "size": "Baby",
-   "was": 12,
-   "now": 4,
-   "emoji": "🩳",
-   "url": "https://www.gerberchildrenswear.com/products/1-pack-baby-boys-dark-blue-cuffed-shorts-wm2506"
-  },
-  {
-   "name": "Baby Girls Light Pink Floral Cuffed Shorts",
-   "store": "Gerber Childrenswear",
-   "cat": "Bottoms",
-   "size": "Baby",
-   "was": 12,
-   "now": 4,
-   "emoji": "🩳",
-   "url": "https://www.gerberchildrenswear.com/products/1-pack-baby-girls-light-pink-floral-cuffed-shorts-wm2506"
-  },
-  {
    "name": "Baby Girls Rose Bouquet Harem Shorts",
    "store": "Gerber Childrenswear",
    "cat": "Bottoms",
@@ -172,24 +112,34 @@ window.DEALS_DATA = {
    "image": "https://www.gerberchildrenswear.com/cdn/shop/files/WM248019B01_MAIN.jpg"
   },
   {
-   "name": "2-Piece Baby & Toddler Girls UPF 50+ Rash Guard & Swim Set",
+   "name": "Baby Boys Lemon Henley Drop Shoulder Top",
    "store": "Gerber Childrenswear",
-   "cat": "Sets",
+   "cat": "Tops",
    "size": "Baby",
-   "was": 36,
-   "now": 9.97,
-   "emoji": "👙",
-   "url": "https://www.gerberchildrenswear.com/products/2-piece-baby-and-toddler-girls-lemon-squeeze-rashguard-swim-bottoms-set-22s-p"
+   "was": 12,
+   "now": 4,
+   "emoji": "👕",
+   "url": "https://www.gerberchildrenswear.com/products/1-pack-baby-boys-light-sky-lemon-henley-drop-shoulder-top-wm2506"
   },
   {
-   "name": "2-Piece Baby & Toddler Boys UPF 50+ Rash Guard & Swim Trunks Set",
-   "store": "Gerber Childrenswear",
+   "name": "Newborn Baby Girls Cotton Long Sleeve Romper Outfit Set",
+   "store": "Walmart",
    "cat": "Sets",
-   "size": "Baby",
-   "was": 34,
-   "now": 9.97,
-   "emoji": "🏊",
-   "url": "https://www.gerberchildrenswear.com/products/2-piece-baby-and-toddler-boys-vacation-vibes-rashguard-swim-trunks-set-22s-p"
+   "size": "3-6 Months",
+   "was": 23.99,
+   "now": 12.89,
+   "emoji": "👶",
+   "url": "https://www.walmart.com/shop/deals/clothing-and-accessories/baby"
+  },
+  {
+   "name": "Baby Neutral Sleep N' Play 2-Way Zipper Footed Pajamas (4-pack)",
+   "store": "Walmart",
+   "cat": "Sleepwear",
+   "size": "Newborn-9 Months",
+   "was": 30.0,
+   "now": 17.99,
+   "emoji": "😴",
+   "url": "https://www.walmart.com/shop/deals/clothing-and-accessories/baby"
   }
  ]
 };
